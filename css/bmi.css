@@ -1,0 +1,186 @@
+/*put css reset here*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------------*/
+
+.primary_color{ /*主要字體顏色*/
+	color:#FFD366; /*橘黃色*/
+}
+.primary_bgcolor{/*主要背景顏色*/
+	background:#FFD366; /*橘黃色*/
+}
+.primary_font{/*主要字形*/
+	font-family:微軟正黑體;
+}
+.F-small{/*字體大小-小*/
+	font-size:11px;
+}
+.F-big{
+	font-size:30px;
+}
+
+.wrap{/*版面內容置中*/
+	max-width:980px;
+	margin:0 auto;
+}
+.clearfix{/*清除浮動*/
+	clear:both;
+}
+
+
+.lesscolor{/*體重過輕=藍標;直接寫在js的物件裡面*/
+	border-left:7px solid blue;
+}
+.finecolor{/*正常範圍=綠標*/
+	border-left:7px solid green;
+}
+.medcolor{/*過重輕度肥胖&中度肥胖=橘標*/
+	border-left:7px solid orange;
+}
+.fatcolor{/*嚴重肥胖=紅標*/
+	border-left:7px solid red;
+}
+
+/*------------------header*/
+.header{
+	padding-bottom:60px;
+	background:	#444444;
+}
+.header .square{
+	width:117px;
+	height:117px;
+	float:left;
+	margin-top:94px;
+	margin-left:160px;
+	margin-right:80px;
+}
+.header .place_fortext{
+	float:left;
+	width:280px;
+	height:170px;
+	margin-top:74px;
+}
+
+.text_style{/*寬度只有250px*/
+	width:230px;
+	height:40px; 
+	padding-left:20px;
+	margin-top:4px;
+	margin-bottom:20px;
+	border:2px solid #FFD366;
+	border-radius:20px;
+	background:rgba(255,255,255, 0.6);
+}
+::placeholder{/*設定placeholer樣式的寫法*/
+	color:#FFFFFF;
+}
+
+.btn_send{
+	float:left;
+	width:120px;
+	height:120px;
+	border:1px solid #FFD366;
+	border-radius:50%;
+	margin-top:92px;
+	margin-left:60px;
+	cursor:pointer;/*游標滑過去呈現手指狀*/
+	font-size:20px;
+}
+.btn_send:hover{
+	box-shadow:0px 0px 10px #FFD366;/*陰影右移;下移;發光程度*/
+}
+.btn_send:active{
+	border:1px solid #FF8800 ;
+	background:#FF8800;
+	box-shadow: none;
+}
+
+/*----------------------content內容*/
+.content{
+	padding:50px 100px 50px 100px; 
+	background:#DDDDDD;
+}
+.content h1{
+	margin-left:464px;
+}
+.show_result>li{
+	width:750px;
+	height:100px;
+	background:white;
+	margin-left:200px;
+	margin-top:25px;
+	border-top:0.7px solid black;
+	border-right:0.7px solid black;
+	border-bottom:0.7px solid black;
+	font-size:20px;
+}
+
+.show_result>li>ul{
+	margin-left:20px;
+}
+.show_result .BMIstyle{
+	width:100px;
+	height:60px;
+	margin-left:10px;
+	margin-top:10px;
+	display:inline-block;
+}
+.BMIstyle p{
+	margin-top:20px;
+	float:left;
+}
+
+
+.footer{
+	height:180px;
+}
+.footer img{
+	margin-left:500px;
+	margin-top:80px;
+}
